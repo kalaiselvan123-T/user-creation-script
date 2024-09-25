@@ -1,7 +1,7 @@
 
 ## User creation script
 
-Script to manage to create users in both organisation and accounts in bundle
+This script manages to create users in both organisation and accounts in bundle
 
 ### Clone the project
 ```
