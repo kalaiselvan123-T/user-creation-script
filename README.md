@@ -5,7 +5,7 @@ Script to manage to create users in both organisation and accounts in bundle
 
 ### Clone the project
 ```
-$ git clone [https://go.googlesource.com/example](https://github.com/kalaiselvan123-T/user-creation-script)
+$ git clone https://github.com/kalaiselvan123-T/user-creation-script
 ```
 
 #### Script setup
