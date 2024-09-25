@@ -45,7 +45,7 @@ func main() {
 	var wg sync.WaitGroup
 
 	N := 100 // Number of concurrent threads needed
-	var number int
+	spawnedGoroutines := 0
 	wg.Add(N)
 
 	for i := 0; i < N; i++ {
@@ -53,12 +53,12 @@ func main() {
 			defer wg.Done()
 			// Call createUser method with the user template
 			responseString, statusCode := transfer.CreateUserForBundle(&users)
-			number++
+			spawnedGoroutines++
 			fmt.Printf("Response String: %s, Status Code: %d\n", responseString, statusCode)
 		}()
 	}
 
 	wg.Wait()
 
-	fmt.Println("number call were made", number)
+	fmt.Printf("Number of goroutines spawned: %d\n", spawnedGoroutines)
 }
