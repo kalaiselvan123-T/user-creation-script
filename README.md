@@ -1,17 +1,16 @@
 
-## Rotate FreshID V2 password
+## User creation script
 
-Script to manage users in bundle accounts
+Script to manage to create users in both organisation and accounts in bundle
 
 ### Clone the project
 ```
-$ git clone https://go.googlesource.com/example
-$ cd example
+$ git clone [https://go.googlesource.com/example](https://github.com/kalaiselvan123-T/user-creation-script)
 ```
 
 #### Script setup
 
-1. `cd` into the respective directory
+1. `cd user-creation-script` into the respective directory
 2. Run `go mod init <SOME-NAME>` to initialize a module
 3. Run `go mod tidy` to add required imports
 
